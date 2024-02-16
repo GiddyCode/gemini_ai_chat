@@ -1,0 +1,24 @@
+name: gemini_ai_chat
+description: "A Gemini Generative AI SDK that incorporates chat functionalities while adhering to clean architecture principles." 
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dio: ^5.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+
+
+
+flutter:
+
