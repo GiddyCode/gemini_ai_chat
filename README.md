@@ -91,7 +91,7 @@ geminiAI.generateTextFromQueryAndImages(
 .catchError((e) => print(e));
 ```
 
-<img height="350" src="https://github.com/GiddyCode/gemini_ai_chat/blob/main/example/assets/gif/textandimage.gif" />
+<img width="300" src="https://github.com/GiddyCode/gemini_ai_chat/blob/main/example/assets/gif/textandimage.gif" />
 
 
 ## Extra Configuration
