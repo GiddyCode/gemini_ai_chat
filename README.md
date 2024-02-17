@@ -10,10 +10,10 @@ This package seamlessly integrates Gemini's features into your application, inco
 <table>
   <tr>
     <td>
-      <img width="450" src="https://github.com/GiddyCode/gemini_ai_chat/blob/main/example/assets/gif/voiceonly.gif" />
+      <img width="450" src="https://raw.githubusercontent.com/GiddyCode/gemini_ai_chat/main/example/assets/gif/voiceonly.gif" />
     </td>
     <td>
-      <img width="450" src="https://github.com/GiddyCode/gemini_ai_chat/blob/main/example/assets/gif/textandimage.gif" />
+      <img width="450" src="https://raw.githubusercontent.com/GiddyCode/gemini_ai_chat/main/example/assets/gif/textandimage.gif" />
     </td>
   </tr>
 </table>
@@ -64,10 +64,10 @@ geminiAI.generateTextFromQuery("---- your Query Sytring ----")
 <table>
   <tr>
     <td>
-      <img width="300" src="https://github.com/GiddyCode/gemini_ai_chat/blob/main/example/assets/gif/textonly.gif" />
+      <img width="300" src="https://raw.githubusercontent.com/GiddyCode/gemini_ai_chat/main/example/assets/gif/textonly.gif" />
     </td>
     <td>
-      <img width="300" src="https://github.com/GiddyCode/gemini_ai_chat/blob/main/example/assets/gif/voiceonly.gif" />
+      <img width="300" src="https://raw.githubusercontent.com/GiddyCode/gemini_ai_chat/main/example/assets/gif/voiceonly.gif" />
     </td>
   </tr>
 </table>
@@ -91,7 +91,7 @@ geminiAI.generateTextFromQueryAndImages(
 .catchError((e) => print(e));
 ```
 
-<img width="300" src="https://github.com/GiddyCode/gemini_ai_chat/blob/main/example/assets/gif/textandimage.gif" />
+<img width="300" src="https://raw.githubusercontent.com/GiddyCode/gemini_ai_chat/blob/main/example/assets/gif/textandimage.gif" />
 
 
 ## Extra Configuration
