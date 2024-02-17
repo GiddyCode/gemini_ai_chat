@@ -1,6 +1,6 @@
 name: gemini_ai_chat
 description: "A Gemini Generative AI SDK that incorporates chat functionalities while adhering to clean architecture principles." 
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/GiddyCode/gemini_ai_chat.git
 
 environment:

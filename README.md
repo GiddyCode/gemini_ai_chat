@@ -31,7 +31,7 @@ To use Gemini AI, you need to obtain the Gemini AI's API key, for that you need 
 
 ## Initialize GeminiAI
 
-Before using GeminiAI you have to initialize. - Make youre you add your API Key. 
+Before using GeminiAI you have to initialize it. - Make sure you add your API Key. 
 
 ```dart
 const apiKey = "--- Your GeminiAI Api Key --- ";
@@ -52,11 +52,13 @@ final geminiAI = GeminiAI(
 
 ### Voice/Text only input
 
-You can genenerate text based content by passing the query (String) in the method.
-NB: This is best suited for generating context with text or voice only input as it uses the gemini-pro model
+You can generate text based content by passing your query (String) in the method.
+NB: This is best suited for generating content with text or voice only input as it uses the Gemini-pro model
 
 ```dart
-geminiAI.generateTextFromQuery("---- your Query Sytring ----")
+String query = "---- Your Query Sytring ----";
+
+geminiAI.generateTextFromQuery(query)
 .then((value) => print(value.text))
 .catchError((e) => print(e));
 ```
@@ -76,27 +78,27 @@ geminiAI.generateTextFromQuery("---- your Query Sytring ----")
 
 ### Text and image input
 
-You can genenerate text based content by passing both the query (String) and selecting an Image from your galary in the method.
-NB: This is only suited for generating content with text or voice only input as it uses the gemini-pro model
+You can also generate text-based content by first selecting an Image from your gallery (or camera) and then adding  the query (String).
 
 ```dart
-//Get the file you want to analyze from yur device or reference it from your asset bundle
-File image = File("assets/images.png")
+//Get the file you want to analyze from your device or reference it from your asset bundle
+File image = File("assets/myimage.png")
+String queryText = "---- Your Query Sytring ----";
 
 geminiAI.generateTextFromQueryAndImages(
-  query: "---- Your Query String -----",
+  query: queryText,
   image: image
 )
 .then((value) => print(value.text))
 .catchError((e) => print(e));
 ```
 
-<img width="300" src="https://raw.githubusercontent.com/GiddyCode/gemini_ai_chat/blob/main/example/assets/gif/textandimage.gif" />
+<img width="300" src="https://raw.githubusercontent.com/GiddyCode/gemini_ai_chat/main/example/assets/gif/textandimage.gif" />
 
 
 ## Extra Configuration
 
-The library have been developed with the average user in mind. However, if you wish to customize your responses
+The library has been developed with the average user in mind. However, if you wish to customize your responses, you can do that by customizing the GenerationConfig.
 
 ### Adding the Custom Configuration
 
@@ -115,9 +117,11 @@ final config = GenerationConfig(
 **Add it To The Instance**
 
 ```dart
+const apiKey = "--- Your GeminiAI Api Key --- ";
+
 // Gemini Instance
-final gemini = GoogleGemini(
-    apiKey: "--- Your Gemini Api Key ---",
+final geminiAI = GeminiAI(
+    apiKey: apiKey,
     config: config // this is where the config goes
 );
 ```
@@ -126,7 +130,7 @@ final gemini = GoogleGemini(
 
 ### Safety settings
 
-To make sure responses are targeted and filtered for particular age group, tartget population or product usecase, The Safety settings can be adjusted.
+To ensure responses are targeted and filtered for particular age groups, target populations or product use cases, The Safety settings can be adjusted.
 
 **Safety Categories**
 
@@ -149,7 +153,7 @@ HARM_CATEGORY_DANGEROUS_CONTENT
 
 **Safety Threshold**
 
-This regulates your safety frequency and harm probability.
+This regulates your safety frequency.
 
 ```dart
 HARM_BLOCK_THRESHOLD_UNSPECIFIED	
@@ -173,10 +177,10 @@ final safety1 = SafetySettings(
 ```
 
 ```dart
-**Add it to the geminiAi instance**
-//  Gemini Instance
-final gemini = GoogleGemini(
-  apiKey:"--- Your Gemini Api Key ---",
+/*Add it to the GeminiAI Instance*/
+
+final geminiAI = GeminiAI(
+  apiKey:"--- Your GeminiAI Api Key ---",
   safetySettings: [
     safety1,
     // safety2
@@ -186,5 +190,5 @@ final gemini = GoogleGemini(
 
 **This Plugin Was Developed By:**
 
-<img  alt="GideonLogo" src="https://raw.githubusercontent.com/GiddyCode/gemini_ai_chat/main/example/assets/images/gideonLogo.png"/>
+<img  alt="GideonLogo" width="60" src="https://raw.githubusercontent.com/GiddyCode/gemini_ai_chat/main/example/assets/images/gideonLogo.png"/>
 
