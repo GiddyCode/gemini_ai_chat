@@ -190,5 +190,5 @@ final geminiAI = GeminiAI(
 
 **This Plugin Was Developed By:**
 
-<img  alt="GideonLogo" width="100" src="https://raw.githubusercontent.com/GiddyCode/gemini_ai_chat/main/example/assets/images/gideonLogo.png"/>
+<img  alt="GideonLogo" width="200" src="https://raw.githubusercontent.com/GiddyCode/gemini_ai_chat/main/example/assets/images/gideonLogo.png"/>
 
